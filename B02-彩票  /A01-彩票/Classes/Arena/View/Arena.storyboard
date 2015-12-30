@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A36-Yc-oLh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Arena Controller-->
+        <scene sceneID="igZ-my-0dR">
+            <objects>
+                <viewController id="dTB-RK-ZTV" customClass="HMArenaController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ppp-HU-A3r"/>
+                        <viewControllerLayoutGuide type="bottom" id="HIv-V6-XKy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XxM-J4-Mr1" customClass="HMArenaView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VIX-xf-9eR">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="hqG-kU-ZD8">
+                            <rect key="frame" x="240" y="7" width="120" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="足球"/>
+                                <segment title="篮球"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChanged:" destination="dTB-RK-ZTV" eventType="valueChanged" id="zP8-Vj-YNN"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="hqG-kU-ZD8" id="jTh-l1-0D3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYj-Sr-U48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="34W-8n-CAf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A36-Yc-oLh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pCb-6p-QZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dTB-RK-ZTV" kind="relationship" relationship="rootViewController" id="Ig3-fV-OFk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3to-cg-gb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="417"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="a4C-3h-jc1" customClass="HMAboutHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_logo" translatesAutoresizingMaskIntoConstraints="NO" id="sJ4-jS-IyQ">
+                    <rect key="frame" x="192" y="81" width="216" height="66"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本:3.056 build 100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRr-KG-2if">
+                    <rect key="frame" x="200" y="171" width="141" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网址:www.ooxx.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irf-Kz-ZQq">
+                    <rect key="frame" x="200" y="197" width="140" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="irf-Kz-ZQq" firstAttribute="top" secondItem="gRr-KG-2if" secondAttribute="bottom" constant="8" id="6pc-D5-Yk1"/>
+                <constraint firstItem="gRr-KG-2if" firstAttribute="top" secondItem="sJ4-jS-IyQ" secondAttribute="bottom" constant="24" id="IVU-nb-zxv"/>
+                <constraint firstItem="gRr-KG-2if" firstAttribute="leading" secondItem="irf-Kz-ZQq" secondAttribute="leading" id="RdY-NV-pvT"/>
+                <constraint firstItem="sJ4-jS-IyQ" firstAttribute="top" secondItem="a4C-3h-jc1" secondAttribute="top" constant="81" id="XUq-cB-0VM"/>
+                <constraint firstAttribute="centerX" secondItem="sJ4-jS-IyQ" secondAttribute="centerX" id="ZZG-e6-Pgf"/>
+                <constraint firstItem="gRr-KG-2if" firstAttribute="leading" secondItem="sJ4-jS-IyQ" secondAttribute="leading" constant="8" id="tku-jv-86R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="492" y="422"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_logo" width="216" height="66"/>
+    </resources>
+</document>
