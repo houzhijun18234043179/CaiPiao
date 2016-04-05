@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ItemsSearchResponseItem</key>
+	<dict>
+		<key>elementPath</key>
+		<dict>
+			<key>num_iid</key>
+			<string>num_iid</string>
+			<key>pic_url</key>
+			<string>pic_url</string>
+			<key>title</key>
+			<string>title</string>
+			<key>price</key>
+			<string>price</string>
+			<key>volume</key>
+			<string>volume</string>
+			<key>promoted_service</key>
+			<string>promoted_service</string>
+			<key>locationCity</key>
+			<string>location/city</string>
+			<key>locationState</key>
+			<string>location/state</string>
+		</dict>
+		<key>objectName</key>
+		<string>ItemModel</string>
+		<key>rootPath</key>
+		<string>//items_search_response/items_search/items/item</string>
+	</dict>
+	<key>ItemsSearchResponseCategory</key>
+	<dict>
+		<key>elementPath</key>
+		<dict>
+			<key>category_id</key>
+			<string>category_id</string>
+			<key>count</key>
+			<string>count</string>
+			<key>title</key>
+			<string>title</string>
+		</dict>
+		<key>objectName</key>
+		<string>CategoryModel</string>
+		<key>rootPath</key>
+		<string>//items_search_response/items_search/item_categories/item_category</string>
+	</dict>
+</dict>
+</plist>
